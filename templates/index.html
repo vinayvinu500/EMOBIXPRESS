@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+<!-- Head Block -->
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+<!-- Body Block -->
+{% block body%}
+<h1 class="center">Elevate Your Mobile Repair Experience</h1>
+<p class="center">Your trusted partner for all mobile repair solutions.</p>
+
+<div class="center">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7ENJcWxwqL1HCeEmqLsLs9TajBy_FWKZ9W7dAvM_z_4Lp0w/viewform?embedded=true" width="640" height="3024" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<section class="services">
+    <h2>Exclusive Services</h2>
+    <div class="service">
+        <img src="{{ url_for('static', filename='Snaps/100_days_warranty.png')}}" alt="Fast Repair Service" />
+        <h3>100 Days Warranty*</h3>
+        <p>We are committed to providing exceptional service and stand behind the quality of our repairs. That’s why we offer a 100% warranty on every repair we undertake. Your satisfaction is our utmost priority, and we strive to exceed your expectations with every interaction.</p>
+    </div>
+    <div class="service">
+        <img src="{{ url_for('static', filename='Snaps/doorstep_pickup_delivery.png')}}" alt="Fast Repair Service" />
+        <h3>Doorstep Pickup & Delivery</h3>
+        <p>EmobiXpress takes pride in offering a seamless and hassle-free experience. With our online mobile repairing booking system, you can easily schedule an appointment at your convenience. Our doorstep pickup and delivery services save you time and effort, allowing you to get your device repaired without leaving the comfort of your home.</p>
+    </div>
+    <div class="service">
+        <img src="{{ url_for('static', filename='Snaps/alwar_outlets.png')}}" alt="Fast Repair Service" />
+        <h3>5+ Outlets in Alwar City</h3>
+        <p>Building upon the solid foundation of our 10-year-old establishment, MobiXpress, EmobiXpress is our digital expansion aimed at providing even more convenience and accessibility to our valued customers. With a team of highly skilled technicians, state-of-the-art equipment, and a customer-centric approach, we are dedicated to delivering top-notch repair services.</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+        <p>"Impressive service quality. My phone feels brand new!"</p>
+    </div>
+</section>
+
+{% endblock %}

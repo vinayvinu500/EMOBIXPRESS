@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+/* ==== Header Section === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: #28334A;
+    color: #FFF;
+  }
+
+.nav-links a {
+margin-left: 20px;
+color: white;
+text-decoration: none;
+}
+
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+.center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+/* === Header Section === */
+
+
+/* Phone Selection, Services and Testimonials styles */
+.phone-selection, .services, .testimonials {
+    padding: 4rem 5%;
+    text-align: center;
+  }
+  
+  .phone-selection .dropdowns select {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .phone-selection .search-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .services .service {
+    display: inline-block;
+    width: 45%;
+    margin: 1%;
+    padding: 2rem;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .services .service img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .testimonials .testimonial {
+    background-color: #FFF;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+
+/* === Footer Section === */
+.footer {
+background-color: #28334A;
+color: white;
+padding: 0.5rem 0;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.social-media a img {
+width: 30px;
+height: 30px;
+margin: 0 10px;
+}
+
+.footer-content {
+    flex-direction: column;
+}
+
+.footer-content .social-media {
+    margin-top: 10px;
+}
+/* === Footer Section === */

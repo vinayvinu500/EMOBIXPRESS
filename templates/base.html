@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{ url_for('static', filename='Snaps/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='JS/script.js')}}"></script>
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <span>Mobixpress</span>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/about">About</a>
+                </div>
+            </nav>
+        </header>
+        
+
+        <!-- Embedding Page -->
+        {% block body %} {% endblock %}
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2023 Mobixpress - All rights reserved.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ url_for('static', filename='Snaps/facebook.png')}}" alt="Facebook" />
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ url_for('static', filename='Snaps/instagram.png')}}" alt="Instagram" />
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ url_for('static', filename='Snaps/whatsapp.png')}}" alt="WhatsApp" />
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ url_for('static', filename='Snaps/twitter.png')}}" alt="Twitter" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
